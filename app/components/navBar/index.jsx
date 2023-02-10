@@ -2,14 +2,8 @@ import { Link } from "@remix-run/react";
 
 const NavBar = () => {
   const listPage = [
-    {
-      id: 1,
-      href: "/users",
-      text: "List Users",
-    },
-    { id: 2, href: "/user", text: "Account" },
     { id: 3, href: "/", text: "Home" },
-    { id: 4, href: "/concat", text: "Concat" },
+    { id: 4, href: "/concat", text: "Add Concat" },
   ];
   return (
     <nav className="navBar">

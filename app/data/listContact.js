@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 
 
 export async function getContact(){
-const readFile=await fs.readFile('db.json',{encoding:'utf-8'});
+  const readFile = await fs.readFile('db.json', { encoding: 'utf-8' });
 const data=JSON.parse(readFile);
 const storeConcat=data.concat??[];
 return storeConcat;

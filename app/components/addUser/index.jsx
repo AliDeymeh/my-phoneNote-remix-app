@@ -1,37 +1,40 @@
+import { Form } from "@remix-run/react";
+
 const AddUserForm = () => {
-const listInput = [
-  {
-    id: "name",
-    type: "text",
-    name: "name",
-    placeholder: "Enter Name . . .",
-    text: "Name",
-  },
-  {
-    id: "LastName",
-    type: "text",
-    name: "lastName",
-    placeholder: "Enter Last Name . . .",
-    text: "Last Name",
-  },
-  {
-    id: "number",
-    type: "tel",
-    name: "numberPhone",
-    placeholder: "Enter  Phone Number . . .",
-    text: "Phone Number",
-  },
-  {
-    id: "Email",
-    type: "email",
-    name: "email",
-    placeholder: "Enter Email . . .",
-    text: "Email",
-  },
-];
+  const listInput = [
+    {
+      id: "name",
+      type: "text",
+      name: "name",
+      placeholder: "Enter Name . . .",
+      text: "Name",
+    },
+    {
+      id: "LastName",
+      type: "text",
+      name: "lastName",
+      placeholder: "Enter Last Name . . .",
+      text: "Last Name",
+    },
+    {
+      id: "number",
+      type: "tel",
+      name: "numberPhone",
+      placeholder: "Enter  Phone Number . . .",
+      text: "Phone Number",
+    },
+    {
+      id: "Email",
+      type: "email",
+      name: "email",
+      placeholder: "Enter Email . . .",
+      text: "Email",
+    },
+  ];
+
   return (
     <>
-      <form className="Form" method="post" action="/concat">
+      <Form className="Form" method="post" action="/concat">
         {listInput.map((item) => {
           return (
             <div key={item.id} className="div">
@@ -55,13 +58,12 @@ const listInput = [
             <option value="woman">Woman</option>
           </select>
         </div>
-      
+
         <button className="buttonSave" type="submit" value={"save"}>
           Save
         </button>
-      </form>
+      </Form>
     </>
   );
-}
- export default AddUserForm;
- 
+};
+export default AddUserForm;

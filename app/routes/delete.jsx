@@ -10,6 +10,7 @@ export default function Index() {
 }
 export async function action({ request }) {
   const formData = await request.formData();
+  console.log(formData);
   const concat = Object.fromEntries(formData);
   const existConcat = await getContact();
   concat.id = new Date().toISOString();

@@ -23,15 +23,31 @@ export default function App() {
         <Links />
       </head>
       <body>
-      <NavBar/>
+        <NavBar />
         <Outlet />
-
         <ScrollRestoration />
-
         <Scripts />
-
         <LiveReload />
-        
+      </body>
+    </html>
+  );
+}
+export function ErrorBoundary({ error }) {
+  return (
+    <html lang="en">
+      <head>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <NavBar />
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+        <div>
+          <p>{error.message}</p>
+        </div>
       </body>
     </html>
   );
