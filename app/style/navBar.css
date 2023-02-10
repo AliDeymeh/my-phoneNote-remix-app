@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navBar {
+  width: 100%;
+  height: 65px;
+  box-shadow: 1px 1px 3px #123;
+}
+.navBarUl {
+  padding: 15px 12px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+@media (max-width: 700px) {
+  .navBarUl {
+    width: 80%;
+  }
+}
+.navBarUl li {
+  cursor: pointer;
+}
+.navBarUl li a {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #456;
+
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.navBarUl li a:hover {
+  color: #456;
+  font-size: 20px;
+  text-shadow: 1px 1px 10px #456;
+}
+/* //-------------------- */
+.Form {
+  margin: auto;
+  margin-top: 30px;
+  width: 420px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #456;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.Form div {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.Form div input {
+  padding: 6px;
+  outline: none;
+  border: none;
+  width: 65%;
+  border-bottom: 1px solid #456;
+  font-size: 18px;
+  font-weight: 700;
+}
+.Form div label {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.Form div textarea {
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 65px;
+  min-height: 65px;
+  border: 1px solid #456;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+}
+#genderLabel {
+  width: 60%;
+}
+#gender {
+  width: 80%;
+  color: #456;
+  height: 50%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #456;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+#gender option {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.buttonSave {
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #4564;
+  color: #456;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.buttonSave:hover {
+  background-color: rgb(82, 221, 140);
+  color: #123;
+}
+/* List Con */
+.divConList {
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  align-items: flex-start;
+justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #4563, #1234);
+}
+.divCan {
+  width: 400px;
+  background-color: rgb(77, 163, 202);
+  height: auto;
+  padding: 15px;
+  box-shadow: 1px 2px 5px #123;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 10px 10px;
+  color: #fff;
+}
+.spanIndex {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(211, 83, 205);
+}
+.nameLastName {
+  width: 100%;
+  height: 30px;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.nameLastName .spanTitle {
+  font-size: 20px;
+}
+.dataUser {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.dataUser span,
+.dataUser p {
+  font-size: 20px;
+  font-weight: 400;
+
+  margin-top: 5px;
+}
+.dataUser span {
+  height: 45px;
+}
+.spanDes {
+  height: 80px;
+  margin: auto 10px;
+  width: 200px;
+  background-color: red;
+  display: inline-block;
+}
